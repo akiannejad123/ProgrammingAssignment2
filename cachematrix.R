@@ -1,6 +1,6 @@
 ##  THis version is by Amanda Kiannejad composed on Aug 6 2016 for the Cousera
 ## course R Progamming 
-
+## Aug 7, 2016
 
 ## makeCacheMatrix contructs the diminsions of the matrix 
 ## it sets the values and initialize the function for 
@@ -26,7 +26,7 @@ cacheMatrix <- function(q, ...) {
   matInv <- q$getMatrixInverse()  
   if(!is.null(matInv)) {   
     message("getting cached matrix data")
-    return(m)   #if the matrix is empty nothing is calculated
+    return(matInv)   #if the matrix is empty nothing is calculated
   }
   Mat <- q$getCacheMatrix()  #this retreives the matrix
   matInv <- solve(Mat, ...)
